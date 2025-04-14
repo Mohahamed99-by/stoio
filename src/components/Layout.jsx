@@ -21,6 +21,7 @@ export default function Layout() {
         <main className="flex-grow pt-20">
           <Outlet />
         </main>
+
         <Footer />
       </div>
     </CartProvider>

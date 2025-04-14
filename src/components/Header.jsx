@@ -67,7 +67,7 @@ export default function Header() {
             {cart.length > 0 ? (
               <div className="animate-fade-up">
                 <div className="max-h-[calc(100vh-300px)] overflow-y-auto pr-2 mb-5 space-y-3 custom-scrollbar">
-                  {[...new Set(cart.map(item => item.id))].map((productId, index) => {
+                  {[...new Set(cart.map(item => item.id))].map((jproductId, index) => {
                     const product = cart.find(item => item.id === productId);
                     const quantity = getQuantity(productId);
                     return (
